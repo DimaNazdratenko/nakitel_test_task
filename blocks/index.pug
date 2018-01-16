@@ -1,7 +1,121 @@
 extends  template
 
 block content
-    div(class="content1") KHJBJJBJKBKJKJ
+    div(class="slider")
+        div(style="text-align: center")
+            span(class="dot" onclick="currentSlide(1)")
+            span(class="dot" onclick="currentSlide(2)")
+            span(class="dot" onclick="currentSlide(3)")
+            span(class="dot" onclick="currentSlide(4)")
 
+        div(class="slideshow-container")
+            div(class="mySlides fade")
+                img(src="../assets/img/slider1.png" style="width: 100%")
+                div(class="text") Дверь на дачу
+
+            div(class="mySlides fade")
+                img(src="../assets/img/slider1.png" style="width: 100%")
+                div(class="text") Еще одна дверь
+
+            div(class="mySlides fade")
+                img(src="../assets/img/slider1.png" style="width: 100%")
+                div(class="text") Супер дверь
+
+            div(class="mySlides fade")
+                img(src="../assets/img/slider1.png" style="width: 100%")
+                div(class="text") Лучшая дверь
+
+    div(class="title") О КОМПАНИИ
+
+    main(class="main")
+        div(class="main_sidebar")
+            div(class="main_sidebar_item")
+                a(href="#") ГЛАВНАЯ
+
+            div(class="main_sidebar_item")
+                a(href="#" class="active") О КОМПАНИИ
+
+            div(class="main_sidebar_item")
+                a(href="#") КАТАЛОГ ПРОДУКЦИИ
+
+            div(class="main_sidebar_item")
+                a(href="#") ОПЛАТА / ДОСТАВКА
+
+            div(class="main_sidebar_item")
+                a(href="#") АКЦИИ
+
+            div(class="main_sidebar_item")
+                a(href="#") ГАРАНТИЯ
+
+            div(class="main_sidebar_item")
+                a(href="#") КОНТАКТЫ
+
+        div(class="main_bg")
+            div(class="main_bg_text")
+                p Повседневная практика показывает, что постоянный количественный рост и
+                | сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Значимость этих проблем
+                | настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки
+                | направлений прогрессивного развития.
+
+                p Идейные соображения высшего порядка, а также сложившаяся структура
+                | организации влечет за собой процесс
+                | внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+
+                p Таким образом сложившаяся структура организации требуют определения и
+                | уточнения направлений прогрессивного
+                | развития. С другой стороны сложившаяся структура организации способствует подготовки и реализации системы
+                | обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что
+                | укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий
+                | активизации.
+
+                p С другой стороны начало повседневной работы по формированию позиции
+                | позволяет оценить значение дальнейших
+                | направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
+                | влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных
+                | задач. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный
+                | эксперимент проверки новых предложений. Равным образом рамки и место обучения кадров в значительной степени
+                | обуславливает создание системы обучения кадров, соответствует насущным потребностям.
+
+                p Повседневная практика показывает, что дальнейшее развитие различных
+                | форм деятельности в значительной степени
+                | обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако
+                | забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в
+                | формировании модели развития.
+
+                p Товарищи! начало повседневной работы по формированию позиции позволяет
+                | выполнять важные задания по разработке систем массовогоу частия.
+
+        div(class="main_banner")
+            div(class="main_banner_1")
+                div(class="main_banner_1_phone")
+                    | Телефон горячей линии #[br]
+                    span(class="big_number") +12(034) 567 89 10 #[br]
+                    | (пн.- пт. с 9.00 до 18.00)
+                div(class="main_banner_1_call")
+                    div(class="main_banner_1_call_text1") ВЫЗВАТЬ
+                    div(class="main_banner_1_call_text2") ЗАМЕРЩИКА
+
+            div(class="main_banner_2")
+                img(src="assets/img/mainBanner2.png")
+                div(class="main_banner_2_text")
+                    | Банерная
+                    p область
+
+            div(class="main_banner_1")
+                div(class="main_banner_1_phone")
+                    | Телефон горячей линии #[br]
+                    span(class="big_number") +12(034) 567 89 10 #[br]
+                    | (пн.- пт. с 9.00 до 18.00)
+                div(class="main_banner_1_call")
+                    div(class="main_banner_1_call_text1") ВЫЗВАТЬ
+                    div(class="main_banner_1_call_text2") ЗАМЕРЩИКА
+
+            div(class="main_banner_2")
+                img(src="assets/img/mainBanner2.png")
+                div(class="main_banner_2_text")
+                    | Банерная
+                    p область
+
+        div(class="bgBottom")
 
 
