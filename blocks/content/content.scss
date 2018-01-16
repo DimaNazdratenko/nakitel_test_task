@@ -91,6 +91,8 @@
     }
 
     &_bg {
+      z-index: 20;
+
       width: 770px;
       height: 852px;
       background-image: url(../assets/img/mainText.png);
@@ -190,17 +192,5 @@
         }
       }
     }
-  }
-
-  .bgBottom {
-    position: absolute;
-    left: 0;
-    bottom: -1750px;
-    z-index: -1;
-
-    background-image: url(../assets/img/bgBottom.png);
-    background-repeat: no-repeat;
-    width: 1920px;
-    height: 320px;
   }
 }

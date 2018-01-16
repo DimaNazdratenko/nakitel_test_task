@@ -1,0 +1,54 @@
+footer {
+
+
+  .bgBottom {
+    margin-top: -150px;
+
+    z-index: 10;
+    background-image: url(../assets/img/bgBottom.png);
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 320px;
+
+    position: relative;
+  }
+
+    .footer{
+
+      width: 1920px;
+      height: 44px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), inset 0 2px 6px rgba(0, 0, 0, 0.75);
+      background-color: #db3534;
+
+      position: absolute;
+      top: 70%;
+
+      &_container {
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_year{
+          color: #ff6666;
+          font-family: "Helvetica Neue";
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        &_menu{
+          a{
+            color: #ffffff;
+            font-family: "Helvetica Neue";
+            font-size: 18px;
+            font-weight: 400;
+
+            cursor: pointer;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+
+}
