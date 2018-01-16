@@ -1,0 +1,28 @@
+include head/head
+include header/header
+include footer/footer
+
+doctype html
+html(lang="ru")
+
+    block head
+        head
+            block info
+                +head({
+                    "title": "Test project",
+                    "author": "Dima Nazdratenko",
+                    "description": "Test project"
+                })
+
+        body
+            div(class="wrapper")
+                div(class="wrapper_content")
+                    block header
+                        +header()
+
+                    div(class="content")
+                        block content
+
+                block footer
+                    +footer()
+

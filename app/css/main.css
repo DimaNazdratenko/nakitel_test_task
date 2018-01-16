@@ -1,0 +1,331 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/***********************MEDIA QUERIES***********************/
+/***********************COLORS & FONTS***********************/
+html, body {
+  height: 100%; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+@font-face {
+  font-family: Helvetica Neue;
+  src: url("../assets/fonts/HelveticaNeueCyr-Light.otf"); }
+
+@font-face {
+  font-family: Bebas Neue Bold;
+  src: url("../assets/fonts/BebasNeueBold.ttf"); }
+
+.header .red_line {
+  width: 1920px;
+  height: 45px;
+  -webkit-box-shadow: 0 5px 5px rgba(16, 16, 15, 0.5);
+          box-shadow: 0 5px 5px rgba(16, 16, 15, 0.5);
+  background-color: #db3534; }
+  .header .red_line nav {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .red_line nav .topnav a:not(:first-child) {
+      display: none;
+      font-family: "Helvetica Neue"; }
+    .header .red_line nav .topnav .icon {
+      position: absolute;
+      top: 10px; }
+    .header .red_line nav .topnav.showMenu a {
+      position: relative;
+      display: block; }
+    .header .red_line nav .right_side {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .header .red_line nav .right_side .cart {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .header .red_line nav .right_side .cart_text {
+          width: 98px;
+          height: 26px;
+          color: #ffffff;
+          font-family: "Helvetica Neue";
+          font-size: 12px;
+          font-weight: 300;
+          margin-left: 10px;
+          margin-right: 21px; }
+      .header .red_line nav .right_side .local {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .header .red_line nav .right_side .local_item {
+          width: 30px;
+          height: 30px;
+          -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px #000000;
+                  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px #000000;
+          background-color: #962020;
+          margin: auto 6px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .header .red_line nav .right_side .local_item_ru {
+            width: 14px;
+            height: 11px;
+            color: #ffffff;
+            font-family: "Helvetica Neue";
+            font-size: 18px;
+            font-weight: 300; }
+          .header .red_line nav .right_side .local_item_ua {
+            width: 19px;
+            height: 11px;
+            color: #ff3f3e;
+            font-family: "Helvetica Neue";
+            font-size: 18px;
+            font-weight: 300; }
+      .header .red_line nav .right_side .search {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-left: 26px;
+        margin-right: -26px; }
+        .header .red_line nav .right_side .search input[type="search"] {
+          width: 270px;
+          height: 30px;
+          -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px #000000;
+                  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px #000000;
+          border: none;
+          background-color: #962020;
+          vertical-align: middle; }
+          .header .red_line nav .right_side .search input[type="search"]::-webkit-input-placeholder {
+            font-family: "Helvetica Neue";
+            font-size: 20px;
+            font-weight: 300;
+            color: #ff3f3e;
+            padding-left: 7px; }
+        .header .red_line nav .right_side .search input[type="image"] {
+          position: relative;
+          left: -3.0em;
+          vertical-align: middle; }
+
+.header .bgTop {
+  background-image: url(../assets/img/bgTop.png);
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 652px; }
+  .header .bgTop .logo_panel {
+    padding-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .bgTop .logo_panel_left_registration a {
+      font-family: "Helvetica Neue";
+      text-shadow: 0 1px 1px rgba(1, 1, 1, 0.5);
+      color: #ffffff;
+      font-weight: 400;
+      line-height: 14px; }
+    .header .bgTop .logo_panel_left_registration #login a {
+      font-size: 15px;
+      text-decoration: none; }
+    .header .bgTop .logo_panel_left_registration #registration a {
+      font-size: 11px;
+      text-decoration: underline; }
+    .header .bgTop .logo_panel_left_socialIcon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 199px; }
+    .header .bgTop .logo_panel_left_cart {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 199px;
+      height: 67px;
+      -webkit-box-shadow: 0 2px 5px rgba(1, 1, 1, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.29);
+              box-shadow: 0 2px 5px rgba(1, 1, 1, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.29);
+      background-color: #de3635;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(176, 39, 39, 0.54)), to(rgba(222, 54, 53, 0.54)));
+      background-image: -o-linear-gradient(bottom, rgba(176, 39, 39, 0.54) 0%, rgba(222, 54, 53, 0.54) 100%);
+      background-image: linear-gradient(to top, rgba(176, 39, 39, 0.54) 0%, rgba(222, 54, 53, 0.54) 100%); }
+      .header .bgTop .logo_panel_left_cart_img {
+        width: 54px;
+        height: 47px;
+        margin-left: 5px; }
+      .header .bgTop .logo_panel_left_cart_text {
+        color: #ffffff;
+        font-family: "Helvetica Neue";
+        margin-right: 5px; }
+        .header .bgTop .logo_panel_left_cart_text_big {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24.13px; }
+        .header .bgTop .logo_panel_left_cart_text_small {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 13.75px; }
+    .header .bgTop .logo_panel_center {
+      text-align: center; }
+      .header .bgTop .logo_panel_center_text {
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+        color: #4c6926;
+        font-family: "Helvetica Neue";
+        font-size: 48px;
+        font-weight: 500;
+        text-transform: uppercase; }
+    .header .bgTop .logo_panel_right_phone {
+      text-shadow: 0 1px 1px rgba(1, 1, 1, 0.5);
+      color: #ffffff;
+      font-family: "Helvetica Neue";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px; }
+      .header .bgTop .logo_panel_right_phone .big_number {
+        font-weight: 500;
+        font-size: 22px; }
+    .header .bgTop .logo_panel_right_call {
+      width: 201px;
+      height: 66px;
+      -webkit-box-shadow: 0 2px 5px rgba(1, 1, 1, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.29);
+              box-shadow: 0 2px 5px rgba(1, 1, 1, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.29);
+      background-color: #de3635;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(176, 39, 39, 0.54)), to(rgba(222, 54, 53, 0.54)));
+      background-image: -o-linear-gradient(bottom, rgba(176, 39, 39, 0.54) 0%, rgba(222, 54, 53, 0.54) 100%);
+      background-image: linear-gradient(to top, rgba(176, 39, 39, 0.54) 0%, rgba(222, 54, 53, 0.54) 100%);
+      text-shadow: 0 1px 1px rgba(1, 1, 1, 0.3);
+      color: #ffffff;
+      font-family: "Helvetica Neue";
+      font-weight: 700;
+      line-height: 26px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header .bgTop .logo_panel_right_call_text1 {
+        font-size: 34px; }
+      .header .bgTop .logo_panel_right_call_text2 {
+        font-size: 24px; }
+  .header .bgTop .door_panel {
+    margin-top: 63px;
+    padding-top: 20px;
+    height: 372px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .bgTop .door_panel .door {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+      color: #608b30;
+      font-family: "Bebas Neue Bold";
+      font-weight: 400; }
+      .header .bgTop .door_panel .door_img {
+        width: 128px;
+        height: 280px; }
+        .header .bgTop .door_panel .door_img img {
+          width: 100%;
+          height: 100%; }
+      .header .bgTop .door_panel .door_text1 {
+        font-size: 63px;
+        margin-top: 4px; }
+      .header .bgTop .door_panel .door_text2 {
+        font-size: 23px; }
