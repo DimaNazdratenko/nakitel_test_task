@@ -1,6 +1,6 @@
 .header {
 
-  .red_line{
+  .red_line {
     width: 1920px;
     height: 45px;
     box-shadow: 0 5px 5px rgba(16, 16, 15, 0.5);
@@ -14,26 +14,50 @@
       align-items: center;
 
       .topnav {
-        a:not(:first-child) {
-          display: none;
-          font-family: "Helvetica Neue";
-        }
+        height: 100%;
+        position: relative;
 
         .icon {
+          img {
+            margin-top: 10px;
+          }
+        }
+
+        .menuHide {
+          display: none;
+
+          background-image: url(../assets/img/menuHide.png);
+          background-repeat: no-repeat;
+
+          width: 201px;
+          height: 242px;
+          opacity: 0.85;
+
           position: absolute;
-          top: 10px;
+          top: 40px;
+
+          &_container {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            margin: 40px 10px 20px 10px;
+
+            a {
+              color: #fefefe;
+              font-family: "Helvetica Neue";
+              font-size: 14px;
+              font-weight: 300;
+              text-transform: uppercase;
+            }
+          }
+
         }
       }
 
       .topnav.showMenu {
-
-        //a.icon{
-        //  position: absolute;
-        //  top: 10px;
-        //}
-
-        a {
-          position: relative;
+        .menuHide {
           display: block;
         }
       }
@@ -129,7 +153,7 @@
     }
   }
 
-  .bgTop{
+  .bgTop {
     background-image: url(../assets/img/bgTop.png);
     background-repeat: no-repeat;
     width: 1920px;
@@ -142,10 +166,10 @@
       justify-content: space-between;
       align-items: center;
 
-      &_left{
+      &_left {
 
-        &_registration{
-          a{
+        &_registration {
+          a {
             font-family: "Helvetica Neue";
             text-shadow: 0 1px 1px rgba(1, 1, 1, 0.5);
             color: #ffffff;
@@ -153,33 +177,32 @@
             line-height: 14px;
           }
 
-          #login{
-            a{
+          #login {
+            a {
               font-size: 15px;
               text-decoration: none;
             }
           }
 
-          #registration{
-            a{
+          #registration {
+            a {
               font-size: 11px;
               text-decoration: underline;
             }
           }
         }
 
-        &_socialIcon{
+        &_socialIcon {
           display: flex;
           justify-content: space-between;
           width: 199px;
 
         }
 
-        &_cart{
+        &_cart {
           display: flex;
           justify-content: space-between;
           align-items: center;
-
 
           width: 199px;
           height: 67px;
@@ -187,24 +210,24 @@
           background-color: #de3635;
           background-image: linear-gradient(to top, rgba(176, 39, 39, 0.54) 0%, rgba(222, 54, 53, 0.54) 100%);
 
-          &_img{
+          &_img {
             width: 54px;
             height: 47px;
             margin-left: 5px;
           }
 
-          &_text{
+          &_text {
             color: #ffffff;
             font-family: "Helvetica Neue";
             margin-right: 5px;
 
-            &_big{
+            &_big {
               font-size: 20px;
               font-weight: 700;
               line-height: 24.13px;
             }
 
-            &_small{
+            &_small {
               font-size: 12px;
               font-weight: 300;
               line-height: 13.75px;
@@ -213,7 +236,7 @@
         }
       }
 
-      &_center{
+      &_center {
         text-align: center;
 
         &_text {
@@ -226,8 +249,8 @@
         }
       }
 
-      &_right{
-        &_phone{
+      &_right {
+        &_phone {
           text-shadow: 0 1px 1px rgba(1, 1, 1, 0.5);
           color: #ffffff;
           font-family: "Helvetica Neue";
@@ -235,19 +258,18 @@
           font-weight: 300;
           line-height: 22px;
 
-          .big_number{
+          .big_number {
             font-weight: 500;
             font-size: 22px;
           }
         }
 
-        &_call{
+        &_call {
           width: 201px;
           height: 66px;
           box-shadow: 0 2px 5px rgba(1, 1, 1, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.29);
           background-color: #de3635;
           background-image: linear-gradient(to top, rgba(176, 39, 39, 0.54) 0%, rgba(222, 54, 53, 0.54) 100%);
-
 
           text-shadow: 0 1px 1px rgba(1, 1, 1, 0.3);
           color: #ffffff;
@@ -260,17 +282,17 @@
           justify-content: center;
           align-items: center;
 
-          &_text1{
+          &_text1 {
             font-size: 34px;
           }
-          &_text2{
+          &_text2 {
             font-size: 24px;
           }
         }
       }
     }
 
-    .door_panel{
+    .door_panel {
       margin-top: 63px;
       padding-top: 20px;
       height: 372px;
@@ -279,7 +301,7 @@
       justify-content: space-between;
       align-items: center;
 
-      .door{
+      .door {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -290,21 +312,21 @@
         font-family: "Bebas Neue Bold";
         font-weight: 400;
 
-        &_img{
+        &_img {
           width: 128px;
           height: 280px;
-          img{
+          img {
             width: 100%;
             height: 100%;
           }
         }
 
-        &_text1{
+        &_text1 {
           font-size: 63px;
           margin-top: 4px;
         }
 
-        &_text2{
+        &_text2 {
           font-size: 23px;
         }
       }

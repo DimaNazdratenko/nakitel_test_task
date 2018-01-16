@@ -69,14 +69,40 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .header .red_line nav .topnav a:not(:first-child) {
-      display: none;
-      font-family: "Helvetica Neue"; }
-    .header .red_line nav .topnav .icon {
-      position: absolute;
-      top: 10px; }
-    .header .red_line nav .topnav.showMenu a {
-      position: relative;
+    .header .red_line nav .topnav {
+      height: 100%;
+      position: relative; }
+      .header .red_line nav .topnav .icon img {
+        margin-top: 10px; }
+      .header .red_line nav .topnav .menuHide {
+        display: none;
+        background-image: url(../assets/img/menuHide.png);
+        background-repeat: no-repeat;
+        width: 201px;
+        height: 242px;
+        opacity: 0.85;
+        position: absolute;
+        top: 40px; }
+        .header .red_line nav .topnav .menuHide_container {
+          height: 80%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin: 40px 10px 20px 10px; }
+          .header .red_line nav .topnav .menuHide_container a {
+            color: #fefefe;
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase; }
+    .header .red_line nav .topnav.showMenu .menuHide {
       display: block; }
     .header .red_line nav .right_side {
       height: 100%;
